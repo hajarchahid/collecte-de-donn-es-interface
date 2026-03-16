@@ -1,0 +1,65 @@
+
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: orthophonic-db
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-ortho_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-secure_password_dev}
+      POSTGRES_DB: ${POSTGRES_DB:-ortho_db}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - ortho_network
+    ports:
+      - "5432:5432"
+    restart: always
+
+  backend:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: orthophonic-backend
+
+    volumes:
+      - ./backend:/app
+      - audio_data:/var/data/audio
+    env_file:
+      - .env
+    environment:
+      - FLASK_ENV=development
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-ortho_user}:${POSTGRES_PASSWORD:-secure_password_dev}@db:5432/${POSTGRES_DB:-ortho_db}
+      - AUDIO_UPLOAD_PATH=/var/data/audio
+      - PYTHONUNBUFFERED=1
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    networks:
+      - ortho_network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: orthophonic-frontend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://127.0.0.1:5000
+    depends_on:
+      - backend
+    networks:
+      - ortho_network
+
+volumes:
+  postgres_data:
+  audio_data:
+
+networks:
+  ortho_network:
+    driver: bridge

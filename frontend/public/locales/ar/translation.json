@@ -1,0 +1,506 @@
+{
+    "welcome": "مرحباً",
+    "dashboard": {
+        "welcome": "مرحباً",
+        "welcome_back": "لوحة قيادة {{name}}",
+        "welcome_tutor": "مرحباً {{name}}",
+        "subtitle": "مساحة متابعة المرضى الخاصة بك",
+        "track_progress": "تتبع تقدمه والوصول إلى التمارين",
+        "stats": {
+            "patients": "عدد الأطفال",
+            "sessions": "الجلسات",
+            "recordings": "التسجيلات"
+        },
+        "charts": {
+            "gender_dist": "توزيع الجنس"
+        },
+        "class": "الفئة {{class}}",
+        "cards": {
+            "level": "المستوى الحالي",
+            "progression": "التقدم العام",
+            "remaining": "المتبقي / يوم",
+            "evaluation_required": "مطلوب التقييم",
+            "test_completed": "اكتمل الاختبار الأولي",
+            "test_desc": "قيّم المستوى الحالي لتخصيص البرنامج.",
+            "training_desc": "الوصول إلى تمارين مخصصة.",
+            "training_locked": "مغلق حتى إكمال الاختبار."
+        },
+        "actions": {
+            "start_test": "بدء اختبار التقييم",
+            "continue_training": "متابعة التدريب",
+            "switch_child": "تغيير الطفل"
+        },
+        "alerts": {
+            "test_required": "مطلوب التقييم",
+            "test_required_desc": "لم يتم إجراء الاختبار الأولي بعد. يرجى البدء بالتقييم لفتح البرنامج."
+        }
+    },
+    "auth": {
+        "note": "ملاحظة",
+        "view": "عرض",
+        "retry": "إعادة المحاولة",
+        "login": {
+            "title": "تسجيل الدخول",
+            "subtitle": "الوصول إلى مساحتك الآمنة",
+            "submit": "دخول",
+            "loading": "جارٍ الدخول...",
+            "identifier_label": "اسم الدخول",
+            "identifier_placeholder": "أدخل اسم الدخول"
+        },
+        "email": "البريد الإلكتروني",
+        "password": "كلمة المرور",
+        "forgot_password": "نسيت كلمة المرور؟",
+        "placeholders": {
+            "email": "example@gmail.com",
+            "password": "••••••••"
+        },
+        "forgot_password_page": {
+            "title": "نسيت كلمة المرور",
+            "subtitle": "أدخل بريدك الإلكتروني لتلقي رابط إعادة التعيين.",
+            "submit": "إرسال الرابط",
+            "loading": "جارٍ الإرسال...",
+            "back_to_login": "العودة لتسجيل الدخول"
+        },
+        "reset_password_page": {
+            "title": "إعادة تعيين",
+            "subtitle": "قم بتعيين كلمة المرور الجديدة",
+            "new_password": "كلمة المرور الجديدة",
+            "confirm_password": "تأكيد كلمة المرور",
+            "submit": "تعيين كلمة المرور",
+            "loading": "جارٍ التحديث..."
+        },
+        "validation": {
+            "password_mismatch": "كلمات المرور غير متطابقة.",
+            "weak_password": "كلمة المرور لا تفي بمعايير الأمان.",
+            "token_missing": "الرمز غير صالح أو مفقود.",
+            "token_invalid": "الرابط غير صالح أو منتهي الصلاحية.",
+            "link_missing": "الرابط مفقود",
+            "link_invalid_desc": "رابط التفعيل غير صالح."
+        },
+        "success": {
+            "account_activated": "تم تفعيل الحساب!",
+            "account_activated_msg": "تم تفعيل حسابك! يمكنك الآن تسجيل الدخول.",
+            "password_reset": "تم تعيين كلمة المرور بنجاح! جاري التوجيه...",
+            "reset_link_sent": "إذا كان هذا البريد موجوداً، فقد تم إرسال رابط إعادة التعيين. تحقق من الرسائل غير المرغوب فيها."
+        },
+        "errors": {
+            "server": "خطأ في الخادم (500).",
+            "network": "خطأ في الشبكة: لا يوجد استجابة من الخادم.",
+            "missing_fields": "كل الحقول مطلوبة.",
+            "send_failed": "تعذر إرسال الطلب. حاول مرة أخرى لاحقاً.",
+            "default": "حدث خطأ ما."
+        },
+        "password_strength": {
+            "chars": "8+ أحرف",
+            "upper": "حرف كبير",
+            "lower": "حرف صغير",
+            "number": "رقم",
+            "special": "رمز خاص",
+            "hint": "مين. 8 أحرف، حرف كبير، رقم ورمز خاص."
+        },
+        "activate_account_page": {
+            "title": "تفعيل الحساب",
+            "subtitle": "أكمل تسجيلك بتعيين كلمة المرور الخاصة بك.",
+            "current_password": "كلمة المرور الحالية (مرسلة عبر البريد)",
+            "new_password": "كلمة المرور الجديدة",
+            "confirm_password": "تأكيد كلمة المرور",
+            "submit": "تفعيل حسابي",
+            "loading": "جارٍ التفعيل..."
+        }
+    },
+    "sidebar": {
+        "titles": {
+            "ortho": "فضاء الأخصائي",
+            "supervision": "فضاء الإشراف",
+            "researcher": "فضاء الباحث",
+            "admin": "الإدارة",
+            "recherche": "فضاء البحث",
+            "tutor": "فضاء الولي"
+        },
+        "menu": {
+            "dashboard": "لوحة القيادة",
+            "home": "الرئيسية",
+            "users": "المستخدمين",
+            "patients_list": "قائمة الأطفال",
+            "back_research": "عودة للبحث",
+            "exploration": "استكشاف",
+            "tutors": "قائمة الأولياء",
+            "test_space": "فضاء الاختبار",
+            "training_space": "فضاء التعلم",
+            "children_files": "ملفات الأطفال"
+        },
+        "logout": "خروج",
+        "role_label": "باحث"
+    },
+    "tutor": {
+        "selection": {
+            "no_children_title": "لم يتم العثور على أطفال",
+            "no_children_desc": "لا يوجد ملف طفل مرتبط بحسابك. يرجى الاتصال بأخصائي النطق لتعيين طفل لك."
+        },
+        "test": {
+            "title": "اختبار التقييم الأولي",
+            "subtitle": "يرجى تسجيل مقطع صوتي قصير لطفلك لتحديد مستواه.",
+            "hero_title": "اكتمل التقييم!",
+            "hero_desc": "تم تحديد مستوى طفلك.",
+            "recommended_level": "المستوى الموصى به",
+            "next_steps": "الخطوات التالية",
+            "next_steps_desc": "يمكنك الآن الوصول إلى تمارين التدريب المناسبة لهذا المستوى.",
+            "back_dashboard": "السابق",
+            "loading": "جارٍ التحميل..."
+        },
+        "training": {
+            "back_dashboard": "السابق",
+            "title": "تدريب - {{name}}",
+            "current_level": "المستوى الحالي: {{level}}",
+            "no_exercises": "لا توجد تمارين متاحة لهذا المستوى.",
+            "model_button": "نموذج",
+            "start_turn": "دورك الآن!",
+            "cancel": "إلغاء",
+            "train_button": "تدريب"
+        }
+    },
+    "admin": {
+        "dashboard": {
+            "title": "لوحة القيادة",
+            "subtitle": "نظرة عامة على المنصة"
+        },
+        "stats": {
+            "total": "إجمالي المستخدمين",
+            "active": "حسابات نشطة",
+            "pending": "قيد الانتظار",
+            "ortho": "أخصائيو نطق",
+            "researcher": "باحثون",
+            "supervisor": "مشرفون",
+            "tutor": "الأولياء"
+        },
+        "users_page": {
+            "title_tutor": "قائمة الأولياء",
+            "title_users": "المستخدمين",
+            "subtitle": "إدارة الحسابات والصلاحيات"
+        },
+        "children": {
+            "title": "إدارة الأطفال (الملفات)",
+            "title_archives": "أرشيف الأطفال",
+            "subtitle": "إنشاء وتعيين ملفات الأطفال لأخصائيي النطق والأولياء",
+            "view_active": "عرض النشطين",
+            "view_archives": "الأرشيف",
+            "create_button": "ملف طفل جديد",
+            "create_title": "إنشاء ملف جديد",
+            "edit_title": "تعديل الملف",
+            "table": {
+                "child": "الطفل (الكود)",
+                "age_sex": "العمر / الجنس",
+                "ortho": "الأخصائي المتابع",
+                "tutor": "الولي",
+                "created_at": "تاريخ الإنشاء",
+                "not_assigned": "غير معين",
+                "empty": "لم يتم العثور على أي طفل.",
+                "actions": "الإجراءات"
+            },
+            "restore_confirm": "هل تريد استعادة هذا الملف؟",
+            "archive_confirm": "هل تريد أرشفة هذا الملف؟ لن يكون مرئياً لأخصائي النطق بعد الآن.",
+            "form": {
+                "section_child": "معلومات الطفل",
+                "section_ortho": "تعيين الأخصائي (إجباري)",
+                "section_tutor": "معلومات الولي",
+                "search_tutor_btn": "ربط ولي موجود",
+                "create_tutor_btn": "إنشاء حساب ولي جديد",
+                "change_tutor": "تغيير",
+                "search_placeholder": "البحث بالبريد أو الاسم...",
+                "select_ortho": "اختر أخصائي نطق...",
+                "error_ortho_required": "تعيين الأخصائي إجباري."
+            }
+        },
+        "users": {
+            "title": "قائمة المستخدمين",
+            "total_count": "{{count}} مستخدم إجمالاً",
+            "new_user": "مستخدم جديد",
+            "table": {
+                "user": "المستخدم",
+                "email": "البريد الإلكتروني",
+                "role": "الدور",
+                "created_at": "تاريخ الإنشاء",
+                "status": "الحالة",
+                "actions": "إجراءات"
+            },
+            "search_placeholder": "البحث بالاسم أو البريد الإلكتروني...",
+            "filters": {
+                "all_statuses": "جميع الحالات",
+                "active": "نشط",
+                "inactive": "غير نشط",
+                "all_roles": "جميع الأدوار"
+            },
+            "message": {
+                "no_users": "لم يتم العثور على أي مستخدم."
+            },
+            "status": {
+                "active": "نشط",
+                "pending": "معلق",
+                "pending_activation": "في انتظار التفعيل"
+            },
+            "actions": {
+                "delete_confirm": "هل أنت متأكد من حذف هذا المستخدم؟",
+                "delete_error": "خطأ في حذف المستخدم",
+                "approve": "تفعيل الحساب",
+                "reset_filters": "إعادة تعيين"
+            },
+            "modal": {
+                "title_create": "مستخدم جديد",
+                "title_edit": "تعديل مستخدم",
+                "title_approve": "تفعيل الحساب",
+                "loading": "جاري الحفظ...",
+                "search_placeholder": "البحث بالاسم أو البريد الإلكتروني...",
+                "fields": {
+                    "last_name": "النسب",
+                    "first_name": "الاسم",
+                    "email": "البريد الإلكتروني",
+                    "phone": "رقم الهاتف",
+                    "password_temp": "كلمة مرور مؤقتة",
+                    "password_new": "كلمة المرور الجديدة",
+                    "role": "الدور",
+                    "username": "اسم المستخدم"
+                },
+                "placeholders": {
+                    "last_name": "النسب",
+                    "first_name": "الاسم",
+                    "phone": "00 00 00 00 00",
+                    "password_received": "كلمة المرور التي سيستلمها المستخدم",
+                    "password_admin": "إعادة تعيين كلمة المرور (للمشرف فقط)"
+                },
+                "hints": {
+                    "password_email": "سيتم إرسال كلمة المرور هذه عبر البريد ويجب تغييرها عند التفعيل.",
+                    "password_empty": "(اتركه فارغاً للاحتفاظ بالكلمة الحالية)"
+                },
+                "roles": {
+                    "ortho": "أخصائي نطق",
+                    "orthophoniste": "أخصائي نطق",
+                    "admin": "مشرف عام",
+                    "researcher": "باحث",
+                    "supervisor": "مشرف",
+                    "tutor": "ولي أمر"
+                }
+            }
+        },
+        "tutor": {
+            "children_modal": {
+                "title": "أطفال {{name}}",
+                "no_children": "لا يوجد أطفال مرتبطين بهذا الولي.",
+                "ortho_label": "الأخصائي: {{name}}"
+            },
+            "view_children": "عرض الأطفال"
+        }
+    },
+    "profile": {
+        "title": "ملفي الشخصي",
+        "change_photo_hint": "انقر لتغيير الصورة",
+        "uploading": "جاري الرفع...",
+        "success": "تم تحديث الملف الشخصي!",
+        "error_upload": "خطأ في رفع الصورة.",
+        "fields": {
+            "first_name": "الاسم الأول",
+            "last_name": "النسب",
+            "email": "البريد الإلكتروني",
+            "language": "اللغة"
+        },
+        "languages": {
+            "fr": "الفرنسية",
+            "en": "الإنجليزية",
+            "ar": "العربية"
+        }
+    },
+    "levels": {
+        "classe_1": "المستوى 1",
+        "classe_2": "المستوى 2",
+        "classe_3": "المستوى 3",
+        "classe_4": "المستوى 4",
+        "classe_5": "المستوى 5",
+        "classe_6": "المستوى 6"
+    },
+    "common": {
+        "male": "ولد",
+        "female": "بنت",
+        "prev": "السابق",
+        "next": "التالي",
+        "page_info": "صفحة {{current}} من {{total}}",
+        "save": "حفظ",
+        "cancel": "إلغاء",
+        "apply": "تطبيق",
+        "close": "إغلاق",
+        "comments": "ملاحظات",
+        "loading": "جارٍ التحميل...",
+        "error": "خطأ",
+        "error_load": "خطأ في التحميل",
+        "filters": "تصفية",
+        "date_label": "التاريخ",
+        "total": "المجموع",
+        "view": "عرض",
+        "retry": "إعادة المحاولة",
+        "years": "سنة",
+        "start": "بدء",
+        "completed": "مكتمل",
+        "continue": "متابعة",
+        "locked": "مغلق"
+    },
+    "researcher": {
+        "banner": "هذه البيانات مجهولة المصدر تماماً ومقدمة للاستخدام العلمي فقط.",
+        "footer": "وصول للبحث العلمي • وضع القراءة فقط",
+        "dashboard": {
+            "title": "لوحة القيادة",
+            "subtitle": "نظرة عامة تحليلية للكوربس"
+        },
+        "kpi": {
+            "new_audios": "تسجيلات جديدة",
+            "total_audios": "إجمالي التسجيلات",
+            "patients": "الأطفال المشمولين",
+            "orthos": "أخصائيو النطق",
+            "tutors": "الأولياء (الآباء)"
+        },
+        "charts": {
+            "gender": "توزيع الجنس",
+            "class_dist": "التوزيع حسب الفئة"
+        },
+        "cards": {
+            "patients_label": "أطفال"
+        },
+        "exploration": {
+            "title": "استكشاف الكوربس",
+            "subtitle": "وصول مجهول الهوية للتسجيلات الصوتية",
+            "export": "تصدير مجموعة البيانات",
+            "search_placeholder": "البحث بالاسم (الطفل/الأخصائي) أو المعرف...",
+            "source": {
+                "all": "جميع المصادر",
+                "ortho": "أخصائي نطق",
+                "tutor": "ولي أمر"
+            },
+            "status": {
+                "all": "جميع الحالات",
+                "new": "جديد",
+                "viewed": "تم استعراضه"
+            },
+            "table": {
+                "id": "معرف",
+                "status": "الحالة",
+                "child_code": "رمز الطفل",
+                "sex_age": "الجنس / العمر",
+                "source": "المصدر",
+                "ortho": "أخصائي النطق",
+                "class": "الفئة",
+                "date": "التاريخ",
+                "audio": "صوت"
+            },
+            "status_badge": {
+                "new": "جديد",
+                "viewed": "مستعرض"
+            },
+            "confirm_export": "تأكيد تصدير مجموعة البيانات المفلترة (مجهولة الهوية)؟\nسيتم وضع علامة على هذه الصوتيات كمستغلة.",
+            "no_results": "لا توجد نتائج",
+            "error_audio": "خطأ في تشغيل الصوت",
+            "error_export": "خطأ أثناء التصدير",
+            "sex": {
+                "all": "جميع الأجناس",
+                "female": "بنات",
+                "male": "أولاد"
+            },
+            "class": {
+                "all": "جميع الفئات"
+            }
+        }
+    },
+    "patients": {
+        "title": "أطفالي",
+        "count": "{{count}} طفل متابع",
+        "new_patient": "طفل جديد",
+        "search_placeholder": "بحث (في هذه الصفحة)...",
+        "loading": "جارٍ التحميل...",
+        "no_patients": "لم يتم العثور على أطفال.",
+        "table": {
+            "name": "الاسم / النسب",
+            "code": "المعرف الفريد (الكود)",
+            "tutor": "الولي",
+            "sex_age": "الجنس / العمر",
+            "registered_at": "تاريخ التسجيل",
+            "actions": "إجراءات"
+        },
+        "modal": {
+            "title_new": "طفل جديد",
+            "title_edit": "تعديل بيانات الطفل",
+            "labels": {
+                "last_name": "النسب",
+                "first_name": "الاسم",
+                "dob": "تاريخ الميلاد",
+                "sex": "الجنس",
+                "code": "كود الطفل (تم إنشاءه)"
+            },
+            "placeholders": {
+                "password": "كلمة مرور الطفل"
+            },
+            "tutor": {
+                "title": "الولي / الوصي (اختياري)",
+                "description": "توفير البريد الإلكتروني سينشئ تلقائياً حساب ولي الأمر للمتابعة المنزلية.",
+                "first_name": "الاسم الأول للولي",
+                "last_name": "نسب الولي",
+                "email": "البريد الإلكتروني (حساب الولي)",
+                "phone": "رقم الهاتف"
+            }
+        },
+        "details": {
+            "title": "ملف الطفل",
+            "back": "العودة للقائمة",
+            "code_unique": "الكود الفريد",
+            "new_session": "جلسة جديدة",
+            "age_sex": "العمر والجنس",
+            "session_history": "سجل الجلسات",
+            "start_session": "بدء أول جلسة",
+            "session_date": "جلسة بتاريخ {{date}}",
+            "recordings_count": "{{count}} تسجيلات",
+            "tutor_title": "الولي / الوصي",
+            "tutor_name_label": "الاسم والنسب",
+            "tutor_phone_label": "الهاتف",
+            "remarks_title": "ملاحظات وتعليقات",
+            "remarks_placeholder": "أضف ملاحظة أو تعليق...",
+            "tabs": {
+                "info": "معلومات",
+                "sessions": "جلسات",
+                "notes": "ملاحظات طبية"
+            },
+            "stats": {
+                "sessions": "جلسات",
+                "duration": "المدة الإجمالية"
+            },
+            "no_sessions": "لا توجد جلسات مسجلة لهذا الطفل"
+        },
+        "not_found": "لم يتم العثور على الطفل",
+        "unnamed": "طفل بدون اسم"
+    },
+    "sessions": {
+        "not_found": "الجلسة غير موجودة",
+        "details": {
+            "back": "العودة لملف الطفل",
+            "title": "تفاصيل الجلسة",
+            "created_at": "تم إنشاؤها في {{date}} الساعة {{time}}",
+            "add_recording": "إضافة تسجيل",
+            "new_recording": "تسجيل جديد",
+            "recordings_title": "التسجيلات ({{count}})",
+            "no_recordings": "لا توجد تسجيلات في هذه الجلسة.",
+            "class_label": "الفئة {{class}}",
+            "notes_title": "ملاحظات الجلسة",
+            "notes_placeholder": "أضف ملاحظات حول هذه الجلسة..."
+        },
+        "recorder": {
+            "error_mic": "تم رفض الوصول للميكروفون.",
+            "classification_label": "تصنيف الشدة",
+            "save_success": "تم حفظ التسجيل!",
+            "save_error": "خطأ أثناء الإرسال.",
+            "player": {
+                "recording": "تسجيل رقم {{id}}",
+                "secure_badge": "بث آمن",
+                "seconds_short": "ث"
+            },
+            "status": {
+                "recording": "جاري التسجيل...",
+                "ready": "جاهز للحفظ",
+                "start": "اضغط للبدء"
+            }
+        }
+    }
+}

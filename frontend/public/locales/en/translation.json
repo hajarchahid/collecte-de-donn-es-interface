@@ -1,0 +1,524 @@
+{
+    "welcome": "Welcome",
+    "dashboard": {
+        "welcome": "Welcome",
+        "welcome_back": "Dashboard of {{name}}",
+        "welcome_tutor": "Welcome {{name}}",
+        "subtitle": "Your patient tracking space",
+        "track_progress": "Track their progress and access exercises",
+        "stats": {
+            "patients": "Number of Children",
+            "sessions": "Sessions",
+            "recordings": "Recordings"
+        },
+        "charts": {
+            "gender_dist": "Gender Distribution"
+        },
+        "class": "Class {{class}}",
+        "cards": {
+            "level": "Current Level",
+            "progression": "Global Progress",
+            "remaining": "Remaining / day",
+            "evaluation_required": "Evaluation Required",
+            "test_completed": "Initial Test Completed",
+            "test_desc": "Evaluate current level to personalize the program.",
+            "training_desc": "Access personalized exercises.",
+            "training_locked": "Locked until test completion."
+        },
+        "actions": {
+            "start_test": "Start Evaluation Test",
+            "continue_training": "Continue Training",
+            "switch_child": "Switch Child"
+        },
+        "alerts": {
+            "test_required": "Evaluation Required",
+            "test_required_desc": "The initial test has not been taken yet. Please start with the evaluation to unlock the program."
+        }
+    },
+    "auth": {
+        "login": {
+            "title": "Login",
+            "subtitle": "Access your secure space",
+            "submit": "Log In",
+            "loading": "Logging in...",
+            "identifier_label": "Login",
+            "identifier_placeholder": "Enter your Login"
+        },
+        "email": "Email",
+        "password": "Password",
+        "forgot_password": "Forgot password?",
+        "placeholders": {
+            "email": "example@gmail.com",
+            "password": "••••••••"
+        },
+        "forgot_password_page": {
+            "title": "Forgot Password",
+            "subtitle": "Enter your email to receive a reset link.",
+            "submit": "Send Link",
+            "loading": "Sending...",
+            "back_to_login": "Back to Login"
+        },
+        "reset_password_page": {
+            "title": "Reset Password",
+            "subtitle": "Set your new password",
+            "new_password": "New Password",
+            "confirm_password": "Confirm Password",
+            "submit": "Set New Password",
+            "loading": "Updating..."
+        },
+        "validation": {
+            "password_mismatch": "Passwords do not match.",
+            "weak_password": "Password does not meet security criteria.",
+            "token_missing": "Invalid or missing token.",
+            "token_invalid": "The link is invalid or expired.",
+            "link_missing": "Missing Link",
+            "link_invalid_desc": "The activation link is invalid."
+        },
+        "success": {
+            "account_activated": "Account Activated!",
+            "account_activated_msg": "Your account is activated! You can now resume.",
+            "password_reset": "Password reset successfully! Redirecting...",
+            "reset_link_sent": "If this email exists, a reset link has been sent. Check your spam."
+        },
+        "errors": {
+            "server": "Server error (500).",
+            "network": "Network error: No response from server.",
+            "missing_fields": "All fields are required.",
+            "send_failed": "Unable to send request. Try again later.",
+            "default": "An error occurred."
+        },
+        "password_strength": {
+            "chars": "8+ chars",
+            "upper": "Uppercase",
+            "lower": "Lowercase",
+            "number": "Number",
+            "special": "Special char",
+            "hint": "Min. 8 chars, uppercase, number, and special char."
+        },
+        "activate_account_page": {
+            "title": "Account Activation",
+            "subtitle": "Finalize your registration by setting your password.",
+            "current_password": "Current Password",
+            "new_password": "New Password",
+            "confirm_password": "Confirm Password",
+            "submit": "Activate my Account",
+            "loading": "Activating..."
+        }
+    },
+    "sidebar": {
+        "titles": {
+            "ortho": "Speech Therapist Space",
+            "supervision": "Supervisor Space",
+            "researcher": "Researcher Space",
+            "recherche": "Researcher Space",
+            "admin": "Administration",
+            "tutor": "Tutor Space"
+        },
+        "menu": {
+            "dashboard": "Dashboard",
+            "home": "Home",
+            "users": "Users",
+            "patients_list": "Children List",
+            "back_research": "Back to Research",
+            "exploration": "Exploration",
+            "tutors": "Tutors List",
+            "test_space": "Testing Space",
+            "training_space": "Learning Space",
+            "children_files": "Children Files"
+        },
+        "logout": "Logout",
+        "role_label": "Researcher"
+    },
+    "tutor": {
+        "selection": {
+            "no_children_title": "No child found",
+            "no_children_desc": "No child file is associated with your account. Please contact your speech therapist to assign a child."
+        },
+        "test": {
+            "title": "Initial Assessment Test",
+            "subtitle": "Please record a short audio clip of your child to determine their level.",
+            "hero_title": "Assessment Complete!",
+            "hero_desc": "Your child's level has been determined.",
+            "recommended_level": "Recommended Level",
+            "next_steps": "Next Steps",
+            "next_steps_desc": "You can now access training exercises adapted to this level.",
+            "back_dashboard": "Previous",
+            "loading": "Loading..."
+        },
+        "training": {
+            "back_dashboard": "Previous",
+            "title": "Training - {{name}}",
+            "current_level": "Current Level: {{level}}",
+            "no_exercises": "No exercises available for this level.",
+            "model_button": "Model",
+            "start_turn": "Your Turn!",
+            "cancel": "Cancel",
+            "train_button": "Train"
+        }
+    },
+    "admin": {
+        "dashboard": {
+            "title": "Dashboard",
+            "subtitle": "Platform Overview"
+        },
+        "stats": {
+            "total": "Total Users",
+            "active": "Active Accounts",
+            "pending": "Pending",
+            "ortho": "Speech Therapists",
+            "researcher": "Researchers",
+            "supervisor": "Supervisors",
+            "tutor": "Tutors"
+        },
+        "users_page": {
+            "title_tutor": "Tutors List",
+            "title_users": "Users",
+            "subtitle": "Manage accounts and access"
+        },
+        "children": {
+            "title": "Children Management (Files)",
+            "title_archives": "Children Archives",
+            "subtitle": "Create and assign child files to speech therapists and tutors",
+            "view_active": "View Active",
+            "view_archives": "Archives",
+            "create_button": "New Child File",
+            "create_title": "Create Child File",
+            "edit_title": "Edit Child File",
+            "table": {
+                "child": "Child (Code)",
+                "age_sex": "Age / Sex",
+                "ortho": "Assigned Therapist",
+                "tutor": "Tutor",
+                "created_at": "Creation Date",
+                "not_assigned": "Unassigned",
+                "empty": "No child found.",
+                "actions": "Actions"
+            },
+            "restore_confirm": "Do you want to restore this file?",
+            "archive_confirm": "Do you want to archive this file? It will no longer be visible to the speech therapist.",
+            "form": {
+                "section_child": "Child Information",
+                "section_ortho": "Therapist Assignment (Required)",
+                "section_tutor": "Tutor Information",
+                "search_tutor_btn": "Link Existing Tutor",
+                "create_tutor_btn": "Create New Tutor",
+                "change_tutor": "Change",
+                "search_placeholder": "Search by email or name...",
+                "select_ortho": "Select a speech therapist...",
+                "error_ortho_required": "Therapist assignment is required."
+            }
+        },
+        "users": {
+            "title": "Users List",
+            "total_count": "{{count}} users total",
+            "new_user": "New User",
+            "table": {
+                "user": "User",
+                "email": "Email",
+                "role": "Role",
+                "created_at": "Created At",
+                "status": "Status",
+                "actions": "Actions"
+            },
+            "search_placeholder": "Search by name, email...",
+            "filters": {
+                "all_statuses": "All Statuses",
+                "active": "Active",
+                "inactive": "Inactive",
+                "all_roles": "All Roles"
+            },
+            "message": {
+                "no_users": "No user found."
+            },
+            "status": {
+                "active": "Active",
+                "pending": "Pending",
+                "pending_activation": "Pending Activation"
+            },
+            "actions": {
+                "delete_confirm": "Are you sure you want to delete this user?",
+                "delete_error": "Error deleting user",
+                "approve": "Validate/Activate Account",
+                "reset_filters": "Reset filters"
+            },
+            "modal": {
+                "title_create": "New User",
+                "title_edit": "Edit User",
+                "title_approve": "Validate Account",
+                "loading": "Saving...",
+                "search_placeholder": "Search by name, email...",
+                "fields": {
+                    "last_name": "Last Name",
+                    "first_name": "First Name",
+                    "email": "Email",
+                    "phone": "Phone Number",
+                    "password_temp": "Temporary Password",
+                    "password_new": "New Password",
+                    "role": "Role",
+                    "username": "Username"
+                },
+                "placeholders": {
+                    "last_name": "Last Name",
+                    "first_name": "First Name",
+                    "phone": "00 00 00 00 00",
+                    "password_received": "Password user will receive",
+                    "password_admin": "Reset password (Admin only)"
+                },
+                "hints": {
+                    "password_email": "This password will be sent by email and must be changed on activation.",
+                    "password_empty": "(Leave empty to keep unchanged)"
+                },
+                "roles": {
+                    "ortho": "Speech Therapist",
+                    "orthophoniste": "Speech Therapist",
+                    "admin": "Administrator",
+                    "researcher": "Researcher",
+                    "supervisor": "Supervisor",
+                    "tutor": "Parent / Tutor"
+                }
+            }
+        },
+        "tutor": {
+            "children_modal": {
+                "title": "Children of {{name}}",
+                "no_children": "No children assigned to this tutor.",
+                "ortho_label": "Therapist: {{name}}"
+            },
+            "view_children": "View Children"
+        }
+    },
+    "profile": {
+        "title": "My Profile",
+        "change_photo_hint": "Click to change photo",
+        "uploading": "Uploading...",
+        "success": "Profile updated!",
+        "error_upload": "Error uploading photo.",
+        "fields": {
+            "first_name": "First Name"
+        },
+        "languages": {
+            "fr": "French",
+            "en": "English",
+            "ar": "Arabic"
+        }
+    },
+    "levels": {
+        "classe_1": "Class 1",
+        "classe_2": "Class 2",
+        "classe_3": "Class 3",
+        "classe_4": "Class 4",
+        "classe_5": "Class 5",
+        "classe_6": "Class 6"
+    },
+    "common": {
+        "male": "Boy",
+        "female": "Girl",
+        "prev": "Previous",
+        "next": "Next",
+        "page_info": "Page {{current}} of {{total}}",
+        "save": "Save",
+        "cancel": "Cancel",
+        "apply": "Apply",
+        "close": "Close",
+        "comments": "Comments",
+        "loading": "Loading...",
+        "error": "Error",
+        "error_load": "Loading error",
+        "filters": "Filters",
+        "date_label": "Date",
+        "total": "Total",
+        "note": "Note",
+        "view": "View",
+        "retry": "Retry",
+        "years": "years",
+        "start": "Start",
+        "completed": "Completed",
+        "continue": "Continue",
+        "locked": "Locked"
+    },
+    "sessions": {
+        "details": {
+            "back": "Back to Child Folder",
+            "title": "Session Details",
+            "created_at": "Created on {{date}} at {{time}}",
+            "add_recording": "Add Recording",
+            "new_recording": "New Recording",
+            "recordings_title": "Recordings ({{count}})",
+            "no_recordings": "No recordings in this session.",
+            "class_label": "Class {{class}}",
+            "notes_title": "Session Notes",
+            "notes_placeholder": "Add observations about this session..."
+        },
+        "recorder": {
+            "error_mic": "Microphone access denied.",
+            "classification_label": "Severity Classification",
+            "save_success": "Recording saved!",
+            "save_error": "Error during upload.",
+            "status": {
+                "recording": "Recording in progress...",
+                "ready": "Ready to save",
+                "start": "Press to start"
+            }
+        },
+        "not_found": "Session not found"
+    },
+    "supervisor": {
+        "loading": "Loading supervision dashboard...",
+        "title": "Supervision Area",
+        "subtitle": "Methodological and scientific monitoring of the protocol",
+        "badge": "STRICTLY ANONYMIZED DATA - READ ONLY",
+        "stats": {
+            "recordings": "Total Recordings",
+            "patients": "Children Included",
+            "orthos": "Speech Therapists",
+            "researchers": "Researchers"
+        },
+        "charts": {
+            "evolution": "Collection Evolution",
+            "total": "Cumulative Total",
+            "class_dist": "Distribution by Class"
+        },
+        "listening": {
+            "title": "Methodological Listening",
+            "description": "Random sample of 5 recent recordings for quality control. Read-only, no download possible.",
+            "refresh": "Refresh sample",
+            "disclaimer": "This space is designed to guarantee the scientific integrity of the corpus. As a supervisor, you cannot modify, delete, or export data. Any anomalies detected must be reported directly to administrators."
+        },
+        "player": {
+            "recording": "Recording #{{id}}",
+            "secure_badge": "SECURE STREAMING",
+            "seconds_short": "s"
+        }
+    },
+    "researcher": {
+        "banner": "These data are strictly anonymized and provided solely for scientific use.",
+        "footer": "Scientific Research Access • Read-Only Mode",
+        "dashboard": {
+            "title": "Dashboard",
+            "subtitle": "Analytical overview of the corpus"
+        },
+        "kpi": {
+            "new_audios": "New Audios",
+            "total_audios": "Total Audios",
+            "patients": "Children Included",
+            "orthos": "Speech Therapists",
+            "tutors": "Tutors (Parents)"
+        },
+        "charts": {
+            "gender": "Gender Distribution",
+            "class_dist": "Distribution by Class"
+        },
+        "cards": {
+            "patients_label": "Children"
+        },
+        "exploration": {
+            "title": "Corpus Exploration",
+            "subtitle": "Anonymized access to audio recordings",
+            "export": "Export Dataset",
+            "search_placeholder": "Search by Name (Child/Therapist) or ID...",
+            "source": {
+                "all": "All Sources",
+                "ortho": "Speech Therapist",
+                "tutor": "Tutor"
+            },
+            "status": {
+                "all": "All Statuses",
+                "new": "New",
+                "viewed": "Already Viewed"
+            },
+            "table": {
+                "id": "ID",
+                "status": "Status",
+                "child_code": "Child Code",
+                "sex_age": "Sex / Age",
+                "source": "Source",
+                "ortho": "Speech Therapist",
+                "class": "Class",
+                "date": "Date",
+                "audio": "Audio"
+            },
+            "status_badge": {
+                "new": "New",
+                "viewed": "Viewed"
+            },
+            "confirm_export": "Confirm export of filtered dataset (Anonymized)?\\nThese audios will be marked as exploited.",
+            "no_results": "No results found",
+            "error_audio": "Error playing audio",
+            "error_export": "Error during export",
+            "sex": {
+                "all": "All Genders",
+                "female": "Girls",
+                "male": "Boys"
+            },
+            "class": {
+                "all": "All Classes"
+            }
+        }
+    },
+    "patients": {
+        "title": "My Children",
+        "count": "{{count}} children tracked",
+        "new_patient": "New Child",
+        "search_placeholder": "Search (on this page)...",
+        "loading": "Loading...",
+        "no_patients": "No children found.",
+        "table": {
+            "name": "Name / First Name",
+            "code": "Unique ID (Code)",
+            "sex_age": "Sex / Age",
+            "registered_at": "Registration Date",
+            "tutor": "Tutor",
+            "actions": "Actions"
+        },
+        "modal": {
+            "title_new": "New Child",
+            "title_edit": "Edit Child",
+            "labels": {
+                "last_name": "Last Name",
+                "first_name": "First Name",
+                "dob": "Date of Birth",
+                "sex": "Sex",
+                "code": "Child Code (Generated)"
+            },
+            "placeholders": {
+                "password": "Child's Password"
+            },
+            "tutor": {
+                "title": "Parent / Tutor (Optional)",
+                "description": "Providing an email will automatically create a Tutor account for home tracking.",
+                "first_name": "Tutor First Name",
+                "last_name": "Tutor Last Name",
+                "email": "Email (Tutor Account)",
+                "phone": "Phone"
+            }
+        },
+        "details": {
+            "title": "Child Folder",
+            "back": "Back to List",
+            "code_unique": "Unique Code",
+            "new_session": "New Session",
+            "age_sex": "Age & Sex",
+            "session_history": "Session History",
+            "start_session": "Start First Session",
+            "session_date": "Session of {{date}}",
+            "recordings_count": "{{count}} recordings",
+            "tutor_title": "Parent / Tutor",
+            "tutor_name_label": "Name & First Name",
+            "tutor_phone_label": "Phone",
+            "remarks_title": "Remarks & Comments",
+            "remarks_placeholder": "Add a note or observation...",
+            "tabs": {
+                "info": "Information",
+                "sessions": "Sessions",
+                "notes": "Clinical Notes"
+            },
+            "stats": {
+                "sessions": "Sessions",
+                "duration": "Total Duration"
+            },
+            "no_sessions": "No sessions recorded for this child"
+        },
+        "not_found": "Child not found",
+        "unnamed": "Unnamed Child"
+    }
+}

@@ -1,0 +1,525 @@
+{
+    "welcome": "Bienvenue",
+    "dashboard": {
+        "welcome": "Bienvenue",
+        "welcome_back": "Tableau de bord de {{name}}",
+        "welcome_tutor": "Bienvenue {{name}}",
+        "subtitle": "Votre espace de suivi patient",
+        "track_progress": "Suivez sa progression et accédez aux exercices",
+        "stats": {
+            "patients": "Nombre des Enfants",
+            "sessions": "Séances",
+            "recordings": "Enregistrements"
+        },
+        "charts": {
+            "gender_dist": "Répartition Sexe"
+        },
+        "class": "Classe {{class}}",
+        "cards": {
+            "level": "Niveau Actuel",
+            "progression": "Progression Globale",
+            "remaining": "Restants / jour",
+            "evaluation_required": "Evaluation Requise",
+            "test_completed": "Test initial complété",
+            "test_desc": "Évaluez le niveau actuel pour personnaliser le programme.",
+            "training_desc": "Accédez aux exercices personnalisés.",
+            "training_locked": "Verrouillé jusqu'à la fin du test."
+        },
+        "actions": {
+            "start_test": "Faire le Test d'Évaluation",
+            "continue_training": "Continuer l'Entraînement",
+            "switch_child": "Changer d'enfant"
+        },
+        "alerts": {
+            "test_required": "Évaluation requise",
+            "test_required_desc": "Le test initial n'a pas encore été passé. Veuillez commencer par l'évaluation pour débloquer le programme."
+        }
+    },
+    "auth": {
+        "login": {
+            "title": "Connexion",
+            "subtitle": "Accédez à votre espace sécurisé",
+            "submit": "Se connecter",
+            "loading": "Connexion...",
+            "identifier_label": "Login",
+            "identifier_placeholder": "Entrez votre Login"
+        },
+        "email": "Email",
+        "password": "Mot de passe",
+        "forgot_password": "Mot de passe oublié ?",
+        "placeholders": {
+            "email": "exemple@gmail.com",
+            "password": "••••••••"
+        },
+        "forgot_password_page": {
+            "title": "Mot de passe oublié",
+            "subtitle": "Entrez votre email pour recevoir le lien de réinitialisation.",
+            "submit": "Envoyer le lien",
+            "loading": "Envoi...",
+            "back_to_login": "Retour à la connexion"
+        },
+        "reset_password_page": {
+            "title": "Réinitialisation",
+            "subtitle": "Définissez votre nouveau mot de passe",
+            "new_password": "Nouveau mot de passe",
+            "confirm_password": "Confirmer le mot de passe",
+            "submit": "Définir le nouveau mot de passe",
+            "loading": "Mise à jour..."
+        },
+        "validation": {
+            "password_mismatch": "Les mots de passe ne correspondent pas.",
+            "weak_password": "Le mot de passe ne respecte pas les critères de sécurité.",
+            "token_missing": "Token invalide ou manquant.",
+            "token_invalid": "Le lien est invalide ou expiré.",
+            "link_missing": "Lien manquant",
+            "link_invalid_desc": "Le lien d'activation est invalide."
+        },
+        "success": {
+            "account_activated": "Compte Activé !",
+            "account_activated_msg": "Votre compte est activé ! Vous pouvez maintenant vous connecter.",
+            "password_reset": "Mot de passe réinitialisé avec succès ! Redirection...",
+            "reset_link_sent": "Si cet email existe, un lien de réinitialisation a été envoyé. Vérifiez vos spams."
+        },
+        "errors": {
+            "server": "Erreur serveur (500).",
+            "network": "Erreur réseau : Pas de réponse du serveur.",
+            "missing_fields": "Tous les champs sont obligatoires.",
+            "send_failed": "Impossible d'envoyer la demande. Réessayez plus tard.",
+            "default": "Une erreur est survenue."
+        },
+        "password_strength": {
+            "chars": "8+ caractères",
+            "upper": "Majuscule",
+            "lower": "Minuscule",
+            "number": "Chiffre",
+            "special": "Caractère spécial",
+            "hint": "Min. 8 caractères, majuscule, chiffre et caractère spécial."
+        },
+        "activate_account_page": {
+            "title": "Activation du Compte",
+            "subtitle": "Finalisez votre inscription en définissant votre mot de passe.",
+            "current_password": "Mot de passe actuel (reçu par email)",
+            "new_password": "Nouveau mot de passe",
+            "confirm_password": "Confirmer le mot de passe",
+            "submit": "Activer mon compte",
+            "loading": "Activation..."
+        }
+    },
+    "sidebar": {
+        "titles": {
+            "ortho": "Espace Orthophoniste",
+            "supervision": "Espace Supervision",
+            "researcher": "Espace Chercheur",
+            "admin": "Administration",
+            "recherche": "Espace Recherche",
+            "tutor": "Espace Tuteur"
+        },
+        "menu": {
+            "dashboard": "Tableau de Bord",
+            "home": "Accueil",
+            "users": "Utilisateurs",
+            "patients_list": "Liste des Enfants",
+            "back_research": "Retour Recherche",
+            "exploration": "Exploration",
+            "tutors": "Liste des Tuteurs",
+            "test_space": "Espace de Test",
+            "training_space": "Espace d'Apprentissage",
+            "children_files": "Dossiers Enfants"
+        },
+        "logout": "Déconnexion",
+        "role_label": "Chercheur"
+    },
+    "tutor": {
+        "selection": {
+            "no_children_title": "Aucun enfant trouvé",
+            "no_children_desc": "Aucun dossier d'enfant n'est associé à votre compte. Veuillez contacter votre orthophoniste pour qu'il vous assigne un enfant."
+        },
+        "test": {
+            "title": "Test d'Évaluation Initial",
+            "subtitle": "Veuillez enregistrer un court extrait audio de votre enfant pour déterminer son niveau.",
+            "hero_title": "Évaluation Terminée !",
+            "hero_desc": "Le niveau de votre enfant a été déterminé.",
+            "recommended_level": "Niveau Recommandé",
+            "next_steps": "Étapes Suivantes",
+            "next_steps_desc": "Vous pouvez maintenant accéder aux exercices d'entraînement adaptés à ce niveau.",
+            "back_dashboard": "Précédent",
+            "loading": "Chargement..."
+        },
+        "training": {
+            "back_dashboard": "Précédent",
+            "title": "Entraînement - {{name}}",
+            "current_level": "Niveau Actuel : {{level}}",
+            "no_exercises": "Aucun exercice disponible pour ce niveau.",
+            "model_button": "Modèle",
+            "start_turn": "À toi !",
+            "cancel": "Annuler",
+            "train_button": "Entraîner"
+        }
+    },
+    "admin": {
+        "dashboard": {
+            "title": "Tableau de bord",
+            "subtitle": "Vue d'ensemble de la plateforme"
+        },
+        "stats": {
+            "total": "Total Utilisateurs",
+            "active": "Comptes Actifs",
+            "pending": "En attente",
+            "ortho": "Orthophonistes",
+            "researcher": "Chercheurs",
+            "supervisor": "Encadrants",
+            "tutor": "Tuteurs"
+        },
+        "users_page": {
+            "title_tutor": "Liste des Tuteurs",
+            "title_users": "Utilisateurs",
+            "subtitle": "Gérez les comptes et les accès"
+        },
+        "children": {
+            "title": "Gestion des Enfants (Dossiers)",
+            "title_archives": "Archives des Enfants",
+            "subtitle": "Créez et affectez les dossiers enfants aux orthophonistes et aux tuteurs",
+            "view_active": "Voir Actifs",
+            "view_archives": "Archives",
+            "create_button": "Nouveau Dossier Enfant",
+            "create_title": "Créer un dossier enfant",
+            "edit_title": "Modifier le dossier enfant",
+            "table": {
+                "child": "Enfant (Code)",
+                "age_sex": "Age / Sexe",
+                "ortho": "Orthophoniste Affecté",
+                "tutor": "Tuteur",
+                "created_at": "Date Création",
+                "not_assigned": "Non affecté",
+                "empty": "Aucun enfant trouvé.",
+                "actions": "Actions"
+            },
+            "restore_confirm": "Voulez-vous restaurer ce dossier ?",
+            "archive_confirm": "Voulez-vous archiver ce dossier ? Il ne sera plus visible par l'orthophoniste.",
+            "form": {
+                "section_child": "Information Enfant",
+                "section_ortho": "Affectation Orthophoniste (Obligatoire)",
+                "section_tutor": "Information Tuteur",
+                "search_tutor_btn": "Associer Tuteur Existant",
+                "create_tutor_btn": "Créer Nouveau Tuteur",
+                "change_tutor": "Changer",
+                "search_placeholder": "Rechercher par email ou nom...",
+                "select_ortho": "Sélectionner un orthophoniste...",
+                "error_ortho_required": "L'affectation d'un orthophoniste est obligatoire."
+            }
+        },
+        "users": {
+            "title": "Liste des Utilisateurs",
+            "total_count": "{{count}} utilisateurs au total",
+            "new_user": "Nouvel Utilisateur",
+            "search_placeholder": "Rechercher par nom, email...",
+            "table": {
+                "user": "Utilisateur",
+                "email": "Email",
+                "role": "Rôle",
+                "created_at": "Créé le",
+                "status": "Statut",
+                "actions": "Actions"
+            },
+            "filters": {
+                "all_statuses": "Tous statuts",
+                "active": "Actif",
+                "inactive": "Inactif",
+                "all_roles": "Tous les rôles"
+            },
+            "message": {
+                "no_users": "Aucun utilisateur trouvé."
+            },
+            "status": {
+                "active": "Actif",
+                "pending": "En attente",
+                "pending_activation": "Activation requise"
+            },
+            "actions": {
+                "delete_confirm": "Êtes-vous sûr de vouloir supprimer cet utilisateur ?",
+                "delete_error": "Erreur lors de la suppression",
+                "approve": "Valider/Activer le compte",
+                "reset_filters": "Réinitialiser les filtres"
+            },
+            "modal": {
+                "title_create": "Nouvel Utilisateur",
+                "title_edit": "Modifier Utilisateur",
+                "title_approve": "Valider le Compte",
+                "loading": "Enregistrement...",
+                "search_placeholder": "Rechercher par nom, email...",
+                "fields": {
+                    "last_name": "Nom",
+                    "first_name": "Prénom",
+                    "email": "Email",
+                    "phone": "Numéro de téléphone",
+                    "password_temp": "Mot de passe provisoire",
+                    "password_new": "Nouveau mot de passe",
+                    "role": "Rôle",
+                    "username": "Utilisateur"
+                },
+                "placeholders": {
+                    "last_name": "Nom",
+                    "first_name": "Prénom",
+                    "phone": "00 00 00 00 00",
+                    "password_received": "Le mot de passe que l'utilisateur recevra",
+                    "password_admin": "Réinitialiser le mot de passe (Admin only)"
+                },
+                "hints": {
+                    "password_email": "Ce mot de passe sera envoyé par email et devra être changé à l'activation.",
+                    "password_empty": "(Laisser vide pour ne pas changer)"
+                },
+                "roles": {
+                    "ortho": "Orthophoniste",
+                    "orthophoniste": "Orthophoniste",
+                    "admin": "Administrateur",
+                    "researcher": "Chercheur",
+                    "supervisor": "Encadrant",
+                    "tutor": "Tuteur"
+                }
+            }
+        },
+        "tutor": {
+            "children_modal": {
+                "title": "Enfants de {{name}}",
+                "no_children": "Aucun enfant associé à ce tuteur.",
+                "ortho_label": "Ortho : {{name}}"
+            },
+            "view_children": "Voir les enfants"
+        }
+    },
+    "profile": {
+        "title": "Mon Profil",
+        "change_photo_hint": "Cliquez pour changer la photo",
+        "uploading": "Upload en cours...",
+        "success": "Profil mis à jour !",
+        "error_upload": "Erreur lors de l'upload de la photo.",
+        "fields": {
+            "first_name": "Prénom",
+            "last_name": "Nom",
+            "email": "Email",
+            "language": "Langue"
+        },
+        "languages": {
+            "fr": "Français",
+            "en": "Anglais",
+            "ar": "Arabe"
+        }
+    },
+    "levels": {
+        "classe_1": "Classe 1",
+        "classe_2": "Classe 2",
+        "classe_3": "Classe 3",
+        "classe_4": "Classe 4",
+        "classe_5": "Classe 5",
+        "classe_6": "Classe 6"
+    },
+    "common": {
+        "male": "Garçon",
+        "female": "Fille",
+        "prev": "Précédent",
+        "next": "Suivant",
+        "page_info": "Page {{current}} sur {{total}}",
+        "save": "Enregistrer",
+        "cancel": "Annuler",
+        "apply": "Appliquer",
+        "close": "Fermer",
+        "comments": "Commentaires",
+        "note": "Note",
+        "view": "Consulter",
+        "retry": "Recommencer",
+        "years": "ans",
+        "loading": "Chargement...",
+        "error": "Erreur",
+        "error_load": "Erreur de chargement",
+        "filters": "Filtres",
+        "date_label": "Date",
+        "total": "Total",
+        "start": "Commencer",
+        "completed": "Complété",
+        "continue": "Continuer",
+        "locked": "Verrouillé"
+    },
+    "sessions": {
+        "details": {
+            "back": "Retour dossier enfant",
+            "title": "Détail de la Séance",
+            "created_at": "Créée le {{date}} à {{time}}",
+            "add_recording": "Ajouter Enregistrement",
+            "new_recording": "Nouvel Enregistrement",
+            "recordings_title": "Enregistrements ({{count}})",
+            "no_recordings": "Aucun enregistrement dans cette séance.",
+            "class_label": "Classe {{class}}",
+            "notes_title": "Notes de Séance",
+            "notes_placeholder": "Ajouter des observations sur cette séance..."
+        },
+        "recorder": {
+            "error_mic": "Accès au micro refusé.",
+            "classification_label": "Classification de la sévérité",
+            "save_success": "Enregistrement sauvegardé !",
+            "save_error": "Erreur lors de l'envoi.",
+            "status": {
+                "recording": "Enregistrement en cours...",
+                "ready": "Prêt à sauvegarder",
+                "start": "Appuyez pour commencer"
+            }
+        },
+        "not_found": "Séance introuvable"
+    },
+    "supervisor": {
+        "loading": "Chargement du tableau de bord de supervision...",
+        "title": "Espace Supervision",
+        "subtitle": "Suivi méthodologique et scientifique du protocole",
+        "badge": "DONNÉES STRICTEMENT ANONYMISÉES - LECTURE SEULE",
+        "stats": {
+            "recordings": "Total Enregistrements",
+            "patients": "Enfants Inclus",
+            "orthos": "Orthophonistes",
+            "researchers": "Chercheurs"
+        },
+        "charts": {
+            "evolution": "Évolution de la Collecte",
+            "total": "Total Cumulé",
+            "class_dist": "Répartition par Classe"
+        },
+        "listening": {
+            "title": "Écoute Méthodologique",
+            "description": "Échantillon aléatoire de 5 enregistrements récents pour contrôle qualité. Lecture seule, aucun téléchargement possible.",
+            "refresh": "Actualiser l'échantillon",
+            "disclaimer": "Cet espace est conçu pour garantir l'intégrité scientifique du corpus. En tant qu'encadrant, vous ne pouvez pas modifier, supprimer ou exporter les données. Toute anomalie détectée doit être signalée directement aux administrateurs."
+        },
+        "player": {
+            "recording": "Enregistrement #{{id}}",
+            "secure_badge": "STREAMING SÉCURISÉ",
+            "seconds_short": "s"
+        }
+    },
+    "researcher": {
+        "banner": "Ces données sont strictement anonymisées et fournies uniquement pour un usage scientifique.",
+        "footer": "Accès Recherche Scientifique • Lecture Seule",
+        "dashboard": {
+            "title": "Tableau de bord",
+            "subtitle": "Vue d'ensemble analytique du corpus"
+        },
+        "kpi": {
+            "new_audios": "Nouveaux Audios",
+            "total_audios": "Total Audios",
+            "patients": "Enfants Inclus",
+            "orthos": "Orthophonistes",
+            "tutors": "Tuteurs (Parents)"
+        },
+        "charts": {
+            "gender": "Répartition Genre",
+            "class_dist": "Répartition par Classe"
+        },
+        "cards": {
+            "patients_label": "Enfants"
+        },
+        "exploration": {
+            "title": "Exploration du Corpus",
+            "subtitle": "Accès anonymisé aux enregistrements audio",
+            "export": "Exporter le Dataset",
+            "search_placeholder": "Rechercher par Nom (Enfant/Orthophoniste) ou ID...",
+            "status": {
+                "all": "Tous les Status",
+                "new": "Nouveaux",
+                "viewed": "Déjà exploités"
+            },
+            "source": {
+                "all": "Toutes Sources",
+                "ortho": "Orthophoniste",
+                "tutor": "Tuteur (Parent)"
+            },
+            "table": {
+                "id": "ID",
+                "status": "Statut",
+                "child_code": "Code Enfant",
+                "sex_age": "Sexe / Age",
+                "source": "Source",
+                "ortho": "Orthophoniste",
+                "class": "Classe",
+                "date": "Date",
+                "audio": "Audio"
+            },
+            "status_badge": {
+                "new": "Nouveau",
+                "viewed": "Exploité"
+            },
+            "confirm_export": "Confirmer l'export du dataset filtré (Anonymisé) ?\\nCes audios seront marqués comme exploités.",
+            "no_results": "Aucun résultat",
+            "error_audio": "Erreur lecture audio",
+            "error_export": "Erreur lors de l'export",
+            "sex": {
+                "all": "Tous Sexes",
+                "female": "Filles",
+                "male": "Garçons"
+            },
+            "class": {
+                "all": "Toutes Classes"
+            }
+        }
+    },
+    "patients": {
+        "title": "Mes Enfants",
+        "count": "{{count}} enfants suivis",
+        "new_patient": "Nouvel Enfant",
+        "search_placeholder": "Rechercher (sur cette page)...",
+        "loading": "Chargement...",
+        "no_patients": "Aucun enfant trouvé.",
+        "table": {
+            "name": "Nom / Prénom",
+            "code": "ID Unique (Code)",
+            "sex_age": "Sexe / Age",
+            "registered_at": "Date d'inscription",
+            "tutor": "Tuteur",
+            "actions": "Actions"
+        },
+        "modal": {
+            "title_new": "Nouvel Enfant",
+            "title_edit": "Modifier l'Enfant",
+            "labels": {
+                "last_name": "Nom",
+                "first_name": "Prénom",
+                "dob": "Date de naissance",
+                "sex": "Sexe",
+                "code": "Code Enfant (Généré)"
+            },
+            "placeholders": {
+                "password": "Mot de passe pour l'enfant"
+            },
+            "tutor": {
+                "title": "Parent / Tuteur ",
+                "description": "Renseigner l'email créera automatiquement un compte Tuteur pour le suivi à domicile.",
+                "first_name": "Prénom du tuteur",
+                "last_name": "Nom du tuteur",
+                "email": "Email (Compte Tuteur)",
+                "phone": "Téléphone"
+            }
+        },
+        "details": {
+            "title": "Dossier Enfant",
+            "back": "Retour à la liste",
+            "code_unique": "Code Unique",
+            "new_session": "Nouvelle Séance",
+            "age_sex": "Age & Sexe",
+            "session_history": "Historique des Séances",
+            "start_session": "Commencer une première séance",
+            "session_date": "Séance du {{date}}",
+            "recordings_count": "{{count}} enregistrements",
+            "remarks_title": "Remarques & Commentaires",
+            "remarks_placeholder": "Ajouter une note ou une observation...",
+            "tutor_title": "Parent / Tuteur",
+            "tabs": {
+                "info": "Informations",
+                "sessions": "Séances",
+                "notes": "Notes Cliniques"
+            },
+            "stats": {
+                "sessions": "Séances",
+                "duration": "Durée Totale"
+            },
+            "no_sessions": "Aucune séance enregistrée pour cet enfant"
+        },
+        "not_found": "Enfant introuvable",
+        "unnamed": "Enfant sans nom"
+    }
+}

@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-slate-50 text-slate-900;
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 10mm;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: white;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+
+    .printable-content,
+    .printable-content * {
+        visibility: visible;
+    }
+
+    .printable-content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        max-width: 210mm;
+        /* Force A4 width constraint just in case */
+        margin: 0;
+        padding: 0 !important;
+        background: white;
+        color: black;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    /* Force compact spacing */
+    .printable-content .mb-8 {
+        margin-bottom: 0.5rem !important;
+    }
+
+    .printable-content .mb-6 {
+        margin-bottom: 0.25rem !important;
+    }
+
+    .printable-content .mb-4 {
+        margin-bottom: 0.25rem !important;
+    }
+
+    .printable-content .mb-2 {
+        margin-bottom: 0.1rem !important;
+    }
+
+    .printable-content .mt-6 {
+        margin-top: 0.5rem !important;
+    }
+
+    .printable-content .p-8,
+    .printable-content .p-6,
+    .printable-content .p-4 {
+        padding: 0.5rem !important;
+    }
+
+    .printable-content .gap-8 {
+        gap: 1rem !important;
+    }
+
+    .printable-content .gap-6 {
+        gap: 0.5rem !important;
+    }
+
+    /* Compact Titles */
+    .printable-content h1 {
+        font-size: 1.4rem !important;
+        margin-bottom: 0.2rem !important;
+        line-height: 1.1;
+    }
+
+    .printable-content h3 {
+        font-size: 1.1rem !important;
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.2rem !important;
+        padding-bottom: 2px !important;
+    }
+
+    .printable-content h4 {
+        font-size: 0.95rem !important;
+        margin-bottom: 0.1rem !important;
+    }
+
+    /* Compact Text */
+    .printable-content p,
+    .printable-content span,
+    .printable-content label,
+    .printable-content div {
+        font-size: 0.8rem !important;
+        line-height: 1.2 !important;
+    }
+
+    /* Compact Inputs */
+    .printable-content input {
+        font-size: 0.9rem !important;
+        padding: 0 !important;
+        height: auto !important;
+        border-bottom: 1px solid #999 !important;
+    }
+
+    /* Hide decorative containers borders/backgrounds to save ink and space */
+    .printable-content .border {
+        border: none !important;
+    }
+
+    .printable-content .border-b {
+        border-bottom: 1px solid #ccc !important;
+    }
+
+    /* Re-add specific borders if semantic section separators are needed */
+    .printable-content h3 {
+        border-bottom: 2px solid #ccc !important;
+    }
+
+    /* Header specific adjustments */
+    .printable-content .bg-\[\#003366\] {
+        background-color: transparent !important;
+        color: black !important;
+        padding: 0 !important;
+        margin-bottom: 1rem !important;
+        border-bottom: 2px solid black !important;
+        text-align: center;
+    }
+
+    .printable-content .bg-\[\#003366\] p {
+        color: #444 !important;
+        font-style: italic;
+    }
+}

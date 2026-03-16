@@ -1,0 +1,12 @@
+flask
+flask-sqlalchemy
+flask-migrate
+flask-cors
+psycopg2-binary
+python-dotenv
+argon2-cffi
+flask-jwt-extended
+email-validator
+librosa
+numpy
+scipy
