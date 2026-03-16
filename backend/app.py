@@ -13,7 +13,7 @@ def create_app():
     jwt.init_app(app)
     cors.init_app(app, resources={r"/*": {"origins": ["http://localhost:5173", "http://127.0.0.1:5173"]}}, supports_credentials=True)
 
-    # Register Blueprints
+    # Register Blueprints test
     from models.user import User
     from blueprints.auth import auth_bp
     from models.child import Child
