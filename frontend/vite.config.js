@@ -7,6 +7,7 @@ export default defineConfig({
     server: {
         host: true,
         port: 5173,
+        allowedHosts: ['www.speechai.fsac.ac.ma', 'speechai.fsac.ac.ma'],
         watch: {
             usePolling: true
         }
