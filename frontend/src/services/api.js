@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const API_URL = import.meta.env.VITE_API_URL || 'https://www.speechai.fsac.ac.ma';
+export const API_URL = import.meta.env.VITE_API_URL || 'https://www.speechai.fsac.ac.ma/api';
 
 const api = axios.create({
     baseURL: API_URL,

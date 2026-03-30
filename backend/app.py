@@ -11,7 +11,7 @@ def create_app():
     migrate.init_app(app, db)
     jwt.init_app(app)
     jwt.init_app(app)
-    cors.init_app(app, resources={r"/*": {"origins": ["https://www.speechai.fsac.ac.ma", "http://www.speechai.fsac.ac.ma"]}}, supports_credentials=True)
+    cors.init_app(app, resources={r"/*": {"origins": ["https://speechai.fsac.ac.ma", "http://speechai.fsac.ac.ma", "https://www.speechai.fsac.ac.ma", "http://www.speechai.fsac.ac.ma"]}}, supports_credentials=True)
 
     # Register Blueprints
     from models.user import User

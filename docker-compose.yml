@@ -50,7 +50,7 @@ services:
     env_file:
       - .env
     environment:
-      - VITE_API_URL=${VITE_API_URL:-https://www.speechai.fsac.ac.ma:5000}
+      - VITE_API_URL=${VITE_API_URL:-https://www.speechai.fsac.ac.ma/api}
     depends_on:
       - backend
     networks:
