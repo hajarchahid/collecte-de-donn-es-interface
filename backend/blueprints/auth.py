@@ -86,7 +86,7 @@ def forgot_password():
 
     if user:
         reset_token = create_access_token(identity=str(user.id), additional_claims={"type": "reset"}, expires_delta=timedelta(minutes=15))
-        reset_link = f"http://localhost:5173/reset-password?token={reset_token}"
+        reset_link = f"https://www.speechai.fsac.ac.ma/reset-password?token={reset_token}"
         
         print(f"DEBUG: Generated Reset Link: {reset_link}", flush=True)
 

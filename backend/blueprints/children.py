@@ -197,7 +197,7 @@ def create_child():
             # Send Activation Email
             try:
                 activation_token = create_access_token(identity=str(new_tutor.id), additional_claims={"type": "activation"}, expires_delta=timedelta(hours=24))
-                activation_link = f"http://localhost:5173/activate-account?token={activation_token}"
+                activation_link = f"https://www.speechai.fsac.ac.ma/activate-account?token={activation_token}"
                 
                 subject, html_content = get_email_content(
                     'activation',
@@ -371,7 +371,7 @@ def update_child(id):
                      # Send Email
                      try:
                         activation_token = create_access_token(identity=str(new_tutor.id), additional_claims={"type": "activation"}, expires_delta=timedelta(hours=24))
-                        activation_link = f"http://localhost:5173/activate-account?token={activation_token}"
+                        activation_link = f"https://www.speechai.fsac.ac.ma/activate-account?token={activation_token}"
                         
                         print(f"==================================================", flush=True)
                         print(f"DEBUG: ACTIVATION LINK for {new_tutor.email}: {activation_link}", flush=True)

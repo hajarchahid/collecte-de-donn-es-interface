@@ -139,7 +139,7 @@ def create_user():
     activation_token = create_access_token(identity=str(new_user.id), additional_claims={"type": "activation"}, expires_delta=timedelta(hours=24))
     
     # Activation Link
-    activation_link = f"http://localhost:5173/activate-account?token={activation_token}"
+    activation_link = f"https://www.speechai.fsac.ac.ma/activate-account?token={activation_token}"
     
     print(f"DEBUG: ACTIVATION LINK for {new_user.email}: {activation_link}", flush=True)
 
