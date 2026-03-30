@@ -298,9 +298,11 @@ const UsersList = ({ refreshUsers, initialRole = '', hideFilter = false, exclude
                                     <button onClick={() => handleEdit(user)} className="p-2 text-slate-400 hover:text-[#00A3FF] transition bg-slate-100 hover:bg-blue-50 rounded-lg">
                                         <Edit size={16} />
                                     </button>
-                                    <button onClick={() => handleDelete(user.id)} className="p-2 text-slate-400 hover:text-red-500 transition bg-slate-100 hover:bg-red-50 rounded-lg">
-                                        <Trash2 size={16} />
-                                    </button>
+                                    {user.role !== 'admin' && (
+                                        <button onClick={() => handleDelete(user.id)} className="p-2 text-slate-400 hover:text-red-500 transition bg-slate-100 hover:bg-red-50 rounded-lg">
+                                            <Trash2 size={16} />
+                                        </button>
+                                    )}
                                 </td>
                             </tr>
                         ))}
